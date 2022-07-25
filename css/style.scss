@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&family=Shrikhand&display=swap");
+$primary: #9356dc;
+$secondary: #ff79da;
+$tertiary: #99e2d0;
+$color-none: black;
+$police_shrikhand: Shrikhand;
+$police_roboto: Roboto;
+$color-box: #f6f6f6;
+$color-box__shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+
+body {
+  margin: 0;
+  font-family: $police_roboto;
+}
+
+a {
+  text-decoration: none;
+  color: $color-none;
+}
+
+h1 {
+  font-family: $police_shrikhand;
+}
+
+ul {
+  padding-left: 0;
+}
+ul li {
+  list-style-type: none;
+}
+
+img {
+  max-width: 80%;
+}
+
+/* I/ HEADER */
+
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 10%;
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .location {
+    display: flex;
+    align-items: center;
+
+    background-color: #e8e3e3;
+    justify-content: center;
+    font-size: 0.9rem;
+    box-shadow: inset 0px 5px 5px -5px #a5a2a2;
+    color: #4b4b4b;
+    font-weight: bold;
+    input {
+      text-align: center;
+      width: 6rem;
+      border: none;
+      background: transparent;
+      padding: 15px;
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: 8px;
+      font-weight: bold;
+      font-size: 0.8rem;
+      &::placeholder {
+        color: #343333;
+        text-align: center;
+      }
+    }
+  }
+  .reservation-and-explore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color-box;
+    padding: 30px 35px 60px 35px;
+
+    h3 {
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-align: center;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-bottom: 5%;
+      margin-top: 2%;
+    }
+
+    p {
+      font-size: 0.88rem;
+      text-align: center;
+      margin-bottom: 10%;
+      color: #504e4e;
+    }
+
+    button {
+      width: 75%;
+      padding: 15px 0 15px 0;
+      border-radius: 30px;
+      background: linear-gradient($secondary, $primary);
+      color: $color-box;
+      border: none;
+      box-shadow: $color-box__shadow;
+      font-size: 0.8rem;
+      cursor: pointer;
+      &:hover {
+        filter: brightness(1.1);
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.45);
+      }
+    }
+  }
+}
+
+.function {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 30px 30px 20px;
+  margin-bottom: 5%;
+  h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  div {
+    display: flex;
+    align-items: center;
+    background-color: $color-box;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 20px 15px 20px 0px;
+    border-radius: 25px;
+    box-shadow: $color-box__shadow;
+    font-weight: bold;
+    &:hover {
+      background-color: #f5edff;
+    }
+    i {
+      padding: 0 10px 0 10px;
+      margin-left: 15px;
+      color: #4b4b4b;
+    }
+    &:hover i {
+      color: $primary;
+    }
+    p {
+      margin-left: 20px;
+      font-size: 0.7rem;
+    }
+    .numbers {
+      background-color: $primary;
+      padding: 5px 7px 5px 7px;
+      border-radius: 100%;
+      color: white;
+      text-align: center;
+      margin-left: -10px;
+      font-size: 0.5rem;
+    }
+  }
+}
+
+/* II/ MAIN */
+
+.restaurants-list {
+  background-color: $color-box;
+  padding: 5% 5%;
+
+  h2 {
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 6%;
+    margin-top: 10%;
+  }
+
+  h3 {
+    padding: 5px 5px 0px 5px;
+    margin: 0 0 0 8px;
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+  p {
+    padding: 7px 7px 7px 7px;
+    margin: 0 0 0 5px;
+    font-size: 0.85rem;
+  }
+
+  .restaurant-card {
+    margin: 0px auto;
+    background-color: $color-box;
+    box-shadow: 0px 5px 20px #999;
+    border-radius: 15px;
+    margin-bottom: 5%;
+    overflow: hidden;
+    position: relative;
+    .restaurant-card-new {
+      position: absolute;
+      right: 20px;
+      top: 15px;
+      z-index: 3;
+      background-color: $tertiary;
+      color: #30a386;
+      font-weight: bold;
+      border-radius: 2px;
+      padding: 1px 3px 1px 0px;
+      p {
+        font-size: 0.7rem;
+      }
+    }
+  }
+  .restaurant-card-image {
+    height: 170px;
+    width: 450px;
+    position: relative;
+    overflow: hidden;
+  }
+  img {
+    object-fit: cover;
+    width: 100%;
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+  }
+
+  .restaurant-card-body {
+    display: flex;
+    height: 70px;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+
+  .fas {
+    overflow: hidden;
+    position: absolute;
+    opacity: 0;
+    margin-top: 0.7px;
+    margin-left: 0.7px;
+    transition: 0.6s;
+    transform: scale(1.1);
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from($primary),
+      to($secondary)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .restaurant-card-icon {
+    padding: 0px 5px 10px 5px;
+    font-size: 1.2rem;
+    margin-right: 20px;
+    position: relative;
+    input {
+      position: absolute;
+      width: 2rem;
+      height: 2rem;
+      opacity: 0;
+      cursor: pointer;
+      z-index: 2;
+      &:checked ~ .far {
+        transition-duration: 0.5s;
+        opacity: 0;
+      }
+      &:checked ~ .fas {
+        transition-duration: 0.5s;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+/* III/ FOOTER */
+
+footer {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  background-color: #353535;
+  line-height: 25px;
+  h2 {
+    color: $color-box;
+    font-size: 0.8rem;
+    font-family: $police_shrikhand;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  div {
+    margin-left: 20px;
+  }
+
+  i {
+    margin-right: 5px;
+  }
+
+  a {
+    color: $color-box;
+    font-size: 0.8rem;
+  }
+}
