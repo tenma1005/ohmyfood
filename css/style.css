@@ -227,17 +227,16 @@ header .reservation-and-explore button:hover {
   box-sizing: border-box;
 }
 .restaurants-list .fas {
+  color: transparent;
   overflow: hidden;
   position: absolute;
   opacity: 0;
   margin-top: 0.7px;
   margin-left: 0.7px;
-  transition: 0.6s;
-  transform: scale(1.1);
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
-  background-clip: text;
+  transition: 0.1s;
+  background: linear-gradient(#9356dc, #ff79da);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+          background-clip: text;
 }
 .restaurants-list .restaurant-card-icon {
   padding: 0px 5px 10px 5px;

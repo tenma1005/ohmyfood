@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/breakpoint-index.css" />
     <link rel="stylesheet" href="css/loader.css" />
   </head>
   <body>
@@ -18,6 +19,7 @@
     <div class="loader">
       <div class="loader_circle"></div>
     </div>
+
     <!-- I/ HEADER -->
     <header>
       <h1>ohmyfood</h1>
@@ -34,8 +36,11 @@
         <button>Explorer nos restaurants</button>
       </div>
     </header>
+
     <!-- II/ MAIN -->
+
     <main>
+      <!-- A/ LE FONCTIONNEMENT -->
       <section class="function">
         <h2>Fonctionnement</h2>
         <div>
@@ -54,9 +59,12 @@
           <p class="padding-card-number_3">Dégustez au restaurant</p>
         </div>
       </section>
+
+      <!-- B/ LES CARTES -->
       <section class="restaurants-list">
-        <h2>Restaurants</h2>
-        <!--card-->
+        <h2 class="titleRestaurants">Restaurants</h2>
+
+        <!--card 1-->
         <article class="restaurant-card">
           <div class="restaurant-card-new"><p>Nouveau</p></div>
           <div class="restaurant-card-image">
@@ -148,6 +156,7 @@
         </article>
       </section>
     </main>
+
     <!-- III/ FOOTER -->
     <footer>
       <div>
@@ -166,7 +175,7 @@
             >
           </li>
           <li><a href="#">Mentions légales</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="mailto:contact@ohmyfood.fr">Contact</a></li>
         </ul>
       </div>
     </footer>
