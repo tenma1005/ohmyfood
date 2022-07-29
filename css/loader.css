@@ -9,31 +9,34 @@
   border-bottom-color: #ff79da;
   border-radius: 50%;
   -webkit-animation: chargeur 2s linear infinite;
-  animation: chargeur 2s linear infinite;
+          animation: chargeur 2s linear infinite;
 }
 
 @-webkit-keyframes disappear {
   to {
     transform: scale(0);
     opacity: 0;
-    z-index: -10000;
+    z-index: -1;
   }
 }
+
 @keyframes disappear {
   to {
     transform: scale(0);
     opacity: 0;
-    z-index: -10000;
+    z-index: -1;
   }
 }
 .loader {
   position: absolute;
   width: 100%;
   height: 100%;
+  z-index: 10;
   background-color: hsla(0deg, 0%, 100%, 0.9);
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
   -webkit-animation: disappear 0ms 2s both;
   animation: disappear 0ms 2s both;
 }
@@ -63,6 +66,7 @@
     border-bottom-color: #9356dc;
   }
 }
+
 @keyframes chargeur {
   0% {
     transform: rotate(0deg) scale(1);
