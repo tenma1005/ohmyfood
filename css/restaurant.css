@@ -205,48 +205,48 @@ button:hover {
 }
 
 .restaurant-minicard-animation-2 {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
-}
-
-.restaurant-minicard-animation-3 {
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
 }
 
-.restaurant-minicard-animation-4 {
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
-}
-
-.restaurant-minicard-animation-5 {
+.restaurant-minicard-animation-3 {
   -webkit-animation-delay: 0.8s;
           animation-delay: 0.8s;
 }
 
-.restaurant-minicard-animation-6 {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-
-.restaurant-minicard-animation-7 {
+.restaurant-minicard-animation-4 {
   -webkit-animation-delay: 1.2s;
           animation-delay: 1.2s;
 }
 
-.restaurant-minicard-animation-8 {
-  -webkit-animation-delay: 1.4s;
-          animation-delay: 1.4s;
-}
-
-.restaurant-minicard-animation-9 {
+.restaurant-minicard-animation-5 {
   -webkit-animation-delay: 1.6s;
           animation-delay: 1.6s;
 }
 
+.restaurant-minicard-animation-6 {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.restaurant-minicard-animation-7 {
+  -webkit-animation-delay: 2.4s;
+          animation-delay: 2.4s;
+}
+
+.restaurant-minicard-animation-8 {
+  -webkit-animation-delay: 2.8s;
+          animation-delay: 2.8s;
+}
+
+.restaurant-minicard-animation-9 {
+  -webkit-animation-delay: 3.2s;
+          animation-delay: 3.2s;
+}
+
 .restaurant-minicard-animation-10 {
-  -webkit-animation-delay: 1.8s;
-          animation-delay: 1.8s;
+  -webkit-animation-delay: 3.6s;
+          animation-delay: 3.6s;
 }
 
 @-webkit-keyframes selection {
@@ -268,9 +268,9 @@ button:hover {
 }
 input:checked ~ .icon {
   margin-right: 0;
-  transition-duration: 0.3s;
+  transition-duration: 0.5s;
 }
 input:checked ~ .icon i {
   transform: rotate(360deg);
-  transition-duration: 0.3s;
+  transition-duration: 0.5s;
 }/*# sourceMappingURL=restaurant.css.map */
