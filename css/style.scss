@@ -232,7 +232,7 @@ header {
     box-sizing: border-box;
   }
 
-  .fas {
+  .fa-solid {
     color: transparent;
     overflow: hidden;
     position: absolute;
@@ -255,11 +255,11 @@ header {
       opacity: 0;
       cursor: pointer;
       z-index: 2;
-      &:checked ~ .far {
+      &:checked ~ .fa-regular {
         transition-duration: 0.5s;
         opacity: 0;
       }
-      &:checked ~ .fas {
+      &:checked ~ .fa-solid {
         transition-duration: 0.5s;
         opacity: 1;
       }

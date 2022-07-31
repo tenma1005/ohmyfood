@@ -231,7 +231,7 @@ header .reservation-and-explore button:hover {
   flex-wrap: wrap;
   box-sizing: border-box;
 }
-.restaurants-list .fas {
+.restaurants-list .fa-solid {
   color: transparent;
   overflow: hidden;
   position: absolute;
@@ -257,11 +257,11 @@ header .reservation-and-explore button:hover {
   cursor: pointer;
   z-index: 2;
 }
-.restaurants-list .restaurant-card-icon input:checked ~ .far {
+.restaurants-list .restaurant-card-icon input:checked ~ .fa-regular {
   transition-duration: 0.5s;
   opacity: 0;
 }
-.restaurants-list .restaurant-card-icon input:checked ~ .fas {
+.restaurants-list .restaurant-card-icon input:checked ~ .fa-solid {
   transition-duration: 0.5s;
   opacity: 1;
 }
