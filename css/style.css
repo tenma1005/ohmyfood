@@ -1,4 +1,9 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&family=Shrikhand&display=swap");
+* {
+  font-size: 20px;
+}
+
 body {
   margin: 0;
   font-family: Roboto;
@@ -22,7 +27,7 @@ ul li {
 }
 
 img {
-  max-width: 80%;
+  max-width: 80%; /*position de l'image par rapport à la maquette*/
 }
 
 /* I/ HEADER */
@@ -42,7 +47,7 @@ header .location {
   background-color: #e8e3e3;
   justify-content: center;
   font-size: 0.9rem;
-  box-shadow: inset 0px 5px 5px -5px #a5a2a2;
+  box-shadow: inset 0px 0.25rem 0.25rem -0.25rem #a5a2a2;
   color: #4b4b4b;
   font-weight: bold;
 }
@@ -51,10 +56,10 @@ header .location input {
   width: 6rem;
   border: none;
   background: transparent;
-  padding: 15px;
+  padding: 0.75rem;
   padding-left: 0;
   padding-right: 0;
-  margin-left: 8px;
+  margin-left: 0.4rem;
   font-weight: bold;
   font-size: 0.8rem;
 }
@@ -75,14 +80,14 @@ header .reservation-and-explore {
   flex-direction: column;
   align-items: center;
   background-color: #f6f6f6;
-  padding: 30px 35px 60px 35px;
+  padding: 1.5rem 1.75rem 3rem 1.75rem;
 }
 header .reservation-and-explore h3 {
   font-weight: bold;
   font-size: 1.2rem;
   text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 1rem;
+  padding-right: 1rem;
   margin-bottom: 5%;
   margin-top: 2%;
 }
@@ -94,8 +99,8 @@ header .reservation-and-explore p {
 }
 header .reservation-and-explore button {
   width: 75%;
-  padding: 15px 0 15px 0;
-  border-radius: 30px;
+  padding: 0.75rem 0 0.75rem 0;
+  border-radius: 1.5rem;
   background: linear-gradient(#ff79da, #9356dc);
   color: #f6f6f6;
   border: none;
@@ -105,28 +110,28 @@ header .reservation-and-explore button {
 }
 header .reservation-and-explore button:hover {
   filter: brightness(1.1);
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.45);
+  box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.45);
 }
 
 .function {
   display: flex;
   flex-direction: column;
-  padding: 30px 30px 30px 20px;
+  padding: 1.5rem 1.5rem 1.5rem 1rem;
   margin-bottom: 5%;
 }
 .function h2 {
-  font-size: 20px;
+  font-size: 1rem;
   font-weight: bold;
-  margin-bottom: 30px;
+  margin-bottom: 1.5rem;
 }
 .function div {
   display: flex;
   align-items: center;
   background-color: #f6f6f6;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
   width: 100%;
-  padding: 20px 15px 20px 0px;
-  border-radius: 25px;
+  padding: 1rem 0.75rem 1rem 0px;
+  border-radius: 1.25rem;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
   font-weight: bold;
 }
@@ -134,24 +139,24 @@ header .reservation-and-explore button:hover {
   background-color: #f5edff;
 }
 .function div i {
-  padding: 0 10px 0 10px;
-  margin-left: 15px;
+  padding: 0 0.5rem 0 0.5rem;
+  margin-left: 0.75rem;
   color: #4b4b4b;
 }
 .function div:hover i {
   color: #9356dc;
 }
 .function div p {
-  margin-left: 20px;
+  margin-left: 1rem;
   font-size: 0.7rem;
 }
 .function div .numbers {
   background-color: #9356dc;
-  padding: 5px 7px 5px 7px;
+  padding: 0.25rem 0.35rem 0.25rem 0.35rem;
   border-radius: 100%;
   color: white;
   text-align: center;
-  margin-left: -10px;
+  margin-left: -0.5rem;
   font-size: 0.5rem;
 }
 
@@ -168,42 +173,42 @@ header .reservation-and-explore button:hover {
   margin-top: 10%;
 }
 .restaurants-list h3 {
-  padding: 5px 5px 0px 5px;
-  margin: 0 0 0 8px;
+  padding: 0.25rem 0.25rem 0.25rem 0.25rem;
+  margin: 0 0 0 0.4rem;
   font-weight: bold;
   font-size: 0.9rem;
 }
 .restaurants-list p {
-  padding: 7px 7px 7px 7px;
-  margin: 0 0 0 5px;
+  padding: 0.35rem 0.35rem 0.35rem 0.35rem;
+  margin: 0 0 0 0.25rem;
   font-size: 0.85rem;
 }
 .restaurants-list .restaurant-card {
   margin: 0px auto;
   background-color: #f6f6f6;
-  box-shadow: 0px 5px 20px #999;
-  border-radius: 15px;
+  box-shadow: 0px 0.25rem 1rem #999;
+  border-radius: 0.75rem;
   margin-bottom: 5%;
   overflow: hidden;
   position: relative;
 }
 .restaurants-list .restaurant-card .restaurant-card-new {
   position: absolute;
-  right: 20px;
-  top: 15px;
+  right: 1rem;
+  top: 0.75rem;
   z-index: 3;
   background-color: #99e2d0;
   color: #30a386;
   font-weight: bold;
-  border-radius: 2px;
-  padding: 1px 3px 1px 0px;
+  border-radius: 0.1rem;
+  padding: 0.05rem 0.15rem 0.05rem 0rem;
 }
 .restaurants-list .restaurant-card .restaurant-card-new p {
   font-size: 0.7rem;
 }
 .restaurants-list .restaurant-card-image {
-  height: 170px;
-  width: 450px;
+  height: 8.5rem;
+  width: 22.5rem;
   position: relative;
   overflow: hidden;
 }
@@ -218,7 +223,7 @@ header .reservation-and-explore button:hover {
 }
 .restaurants-list .restaurant-card-body {
   display: flex;
-  height: 70px;
+  height: 3.5rem;
   flex-direction: column;
   justify-content: center;
   align-content: space-between;
@@ -231,17 +236,17 @@ header .reservation-and-explore button:hover {
   overflow: hidden;
   position: absolute;
   opacity: 0;
-  margin-top: 0.7px;
-  margin-left: 0.7px;
+  margin-top: 0.035rem;
+  margin-left: 0.035rem;
   transition: 0.1s;
   background: linear-gradient(#9356dc, #ff79da);
   -webkit-background-clip: text;
           background-clip: text;
 }
 .restaurants-list .restaurant-card-icon {
-  padding: 0px 5px 10px 5px;
+  padding: 0px 0.25rem 0.5rem 0.25rem;
   font-size: 1.2rem;
-  margin-right: 20px;
+  margin-right: 1rem;
   position: relative;
 }
 .restaurants-list .restaurant-card-icon input {
@@ -266,7 +271,7 @@ footer {
   display: flex;
   flex-direction: column;
   background-color: #353535;
-  line-height: 25px;
+  line-height: 1.25rem;
 }
 footer h2 {
   color: #f6f6f6;
@@ -276,10 +281,10 @@ footer h2 {
   padding-bottom: 5%;
 }
 footer div {
-  margin-left: 20px;
+  margin-left: 1rem;
 }
 footer i {
-  margin-right: 5px;
+  margin-right: 0.25rem;
 }
 footer a {
   color: #f6f6f6;

@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&family=Shrikhand&display=swap");
 @import "variables";
 
+* {
+  font-size: 20px;
+}
+
 body {
   margin: 0;
   font-family: $police_roboto;
@@ -23,7 +27,7 @@ ul li {
 }
 
 img {
-  max-width: 80%;
+  max-width: 80%; /*position de l'image par rapport à la maquette*/
 }
 
 /* I/ HEADER */
@@ -44,7 +48,7 @@ header {
     background-color: #e8e3e3;
     justify-content: center;
     font-size: 0.9rem;
-    box-shadow: inset 0px 5px 5px -5px #a5a2a2;
+    box-shadow: inset 0px 0.25rem 0.25rem -0.25rem #a5a2a2;
     color: #4b4b4b;
     font-weight: bold;
     input {
@@ -52,10 +56,10 @@ header {
       width: 6rem;
       border: none;
       background: transparent;
-      padding: 15px;
+      padding: 0.75rem;
       padding-left: 0;
       padding-right: 0;
-      margin-left: 8px;
+      margin-left: 0.4rem;
       font-weight: bold;
       font-size: 0.8rem;
       &::placeholder {
@@ -69,14 +73,14 @@ header {
     flex-direction: column;
     align-items: center;
     background-color: $color-box;
-    padding: 30px 35px 60px 35px;
+    padding: 1.5rem 1.75rem 3rem 1.75rem;
 
     h3 {
       font-weight: bold;
       font-size: 1.2rem;
       text-align: center;
-      padding-left: 20px;
-      padding-right: 20px;
+      padding-left: 1rem;
+      padding-right: 1rem;
       margin-bottom: 5%;
       margin-top: 2%;
     }
@@ -90,8 +94,8 @@ header {
 
     button {
       width: 75%;
-      padding: 15px 0 15px 0;
-      border-radius: 30px;
+      padding: 0.75rem 0 0.75rem 0;
+      border-radius: 1.5rem;
       background: linear-gradient($secondary, $primary);
       color: $color-box;
       border: none;
@@ -100,7 +104,7 @@ header {
       cursor: pointer;
       &:hover {
         filter: brightness(1.1);
-        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.45);
+        box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.45);
       }
     }
   }
@@ -109,45 +113,45 @@ header {
 .function {
   display: flex;
   flex-direction: column;
-  padding: 30px 30px 30px 20px;
+  padding: 1.5rem 1.5rem 1.5rem 1rem;
   margin-bottom: 5%;
   h2 {
-    font-size: 20px;
+    font-size: 1rem;
     font-weight: bold;
-    margin-bottom: 30px;
+    margin-bottom: 1.5rem;
   }
   div {
     display: flex;
     align-items: center;
     background-color: $color-box;
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
     width: 100%;
-    padding: 20px 15px 20px 0px;
-    border-radius: 25px;
+    padding: 1rem 0.75rem 1rem 0px;
+    border-radius: 1.25rem;
     box-shadow: $color-box__shadow;
     font-weight: bold;
     &:hover {
       background-color: #f5edff;
     }
     i {
-      padding: 0 10px 0 10px;
-      margin-left: 15px;
+      padding: 0 0.5rem 0 0.5rem;
+      margin-left: 0.75rem;
       color: #4b4b4b;
     }
     &:hover i {
       color: $primary;
     }
     p {
-      margin-left: 20px;
+      margin-left: 1rem;
       font-size: 0.7rem;
     }
     .numbers {
       background-color: $primary;
-      padding: 5px 7px 5px 7px;
+      padding: 0.25rem 0.35rem 0.25rem 0.35rem;
       border-radius: 100%;
       color: white;
       text-align: center;
-      margin-left: -10px;
+      margin-left: -0.5rem;
       font-size: 0.5rem;
     }
   }
@@ -168,43 +172,43 @@ header {
   }
 
   h3 {
-    padding: 5px 5px 0px 5px;
-    margin: 0 0 0 8px;
+    padding: 0.25rem 0.25rem 0.25rem 0.25rem;
+    margin: 0 0 0 0.4rem;
     font-weight: bold;
     font-size: 0.9rem;
   }
   p {
-    padding: 7px 7px 7px 7px;
-    margin: 0 0 0 5px;
+    padding: 0.35rem 0.35rem 0.35rem 0.35rem;
+    margin: 0 0 0 0.25rem;
     font-size: 0.85rem;
   }
 
   .restaurant-card {
     margin: 0px auto;
     background-color: $color-box;
-    box-shadow: 0px 5px 20px #999;
-    border-radius: 15px;
+    box-shadow: 0px 0.25rem 1rem #999;
+    border-radius: 0.75rem;
     margin-bottom: 5%;
     overflow: hidden;
     position: relative;
     .restaurant-card-new {
       position: absolute;
-      right: 20px;
-      top: 15px;
+      right: 1rem;
+      top: 0.75rem;
       z-index: 3;
       background-color: $tertiary;
       color: #30a386;
       font-weight: bold;
-      border-radius: 2px;
-      padding: 1px 3px 1px 0px;
+      border-radius: 0.1rem;
+      padding: 0.05rem 0.15rem 0.05rem 0rem;
       p {
         font-size: 0.7rem;
       }
     }
   }
   .restaurant-card-image {
-    height: 170px;
-    width: 450px;
+    height: 8.5rem;
+    width: 22.5rem;
     position: relative;
     overflow: hidden;
   }
@@ -219,7 +223,7 @@ header {
 
   .restaurant-card-body {
     display: flex;
-    height: 70px;
+    height: 3.5rem;
     flex-direction: column;
     justify-content: center;
     align-content: space-between;
@@ -233,16 +237,16 @@ header {
     overflow: hidden;
     position: absolute;
     opacity: 0;
-    margin-top: 0.7px;
-    margin-left: 0.7px;
+    margin-top: 0.035rem;
+    margin-left: 0.035rem;
     transition: 0.1s;
     background: linear-gradient($primary, $secondary);
     background-clip: text;
   }
   .restaurant-card-icon {
-    padding: 0px 5px 10px 5px;
+    padding: 0px 0.25rem 0.5rem 0.25rem;
     font-size: 1.2rem;
-    margin-right: 20px;
+    margin-right: 1rem;
     position: relative;
     input {
       position: absolute;
@@ -269,7 +273,7 @@ footer {
   display: flex;
   flex-direction: column;
   background-color: #353535;
-  line-height: 25px;
+  line-height: 1.25rem;
   h2 {
     color: $color-box;
     font-size: 0.8rem;
@@ -279,11 +283,11 @@ footer {
   }
 
   div {
-    margin-left: 20px;
+    margin-left: 1rem;
   }
 
   i {
-    margin-right: 5px;
+    margin-right: 0.25rem;
   }
 
   a {

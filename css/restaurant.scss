@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&family=Shrikhand&display=swap");
 @import "variables";
 
+* {
+  font-size: 20px;
+}
+
 /* I/ HEADER */
 
 .Icon-and-title {
@@ -9,7 +13,7 @@
     position: absolute;
     top: 3%;
     left: 6.5%;
-    font-size: 20px;
+    font-size: 1rem;
   }
 }
 
@@ -31,24 +35,24 @@ main {
   border-radius: 2rem 2rem 0 0;
   display: flex;
   flex-direction: column;
-  padding: 15px;
+  padding: 1rem;
   padding-bottom: 5rem;
 
   section {
     h3 {
       color: #4b4b4b;
       position: relative;
-      padding-bottom: 5px;
+      padding-bottom: 0.25rem;
       font-weight: 400;
-      font-size: 17px;
+      font-size: 0.85rem;
       margin-bottom: 5%;
-      padding-bottom: 10px;
+      padding-bottom: 0.5rem;
 
       &::after {
         /*pour crée un pseudo-élément qui sera le dernier enfant de l'élément sélectionné. */
         content: ""; /*chaîne de caractère vide*/
         width: 2rem;
-        height: 3px;
+        height: 0.15rem;
         background-color: $tertiary;
         position: absolute;
         left: 0;
@@ -67,24 +71,23 @@ main {
 
   h2 {
     font-family: "Shrikhand";
-    font-size: 28px;
+    font-size: 1.4rem;
   }
 
   i {
-    font-size: 30px;
+    font-size: 1.5rem;
   }
   .card-icon {
-    padding: 5px;
+    padding: 0.25rem;
     font-size: 1.6rem;
-    margin-right: 15px;
+    margin-right: 0.75rem;
 
     .fas {
-      /*urgent: penser à le mettre dans un autre fichier css pour éviter la duplication car déjà présent dans style.css*/
       color: transparent;
       position: absolute;
       opacity: 0; /* pour rendre visible le coeur rose si et seulement si on click sur l'icon */
-      margin-top: 0.7px;
-      margin-left: 0.7px;
+      margin-top: 0.035rem;
+      margin-left: 0.035rem;
       transition: 0.01s; /*temps pour le coeur rose d'apparaitre*/
       background: linear-gradient($primary, $secondary);
       background-clip: text; /*on met le background pour ne pas faire un carré rose mais un coeur*/
@@ -117,16 +120,16 @@ main {
 
 .restaurant-dishes,
 .restaurant-desserts {
-  margin-top: 40px;
+  margin-top: 2rem;
 }
 
 .restaurant-minicard {
   display: flex;
   background-color: $color-box;
   justify-content: flex-end;
-  margin-bottom: 15px;
+  margin-bottom: 0.75rem;
   overflow: hidden;
-  border-radius: 15px;
+  border-radius: 0.75rem;
   box-shadow: $color-box__shadow;
   opacity: 0;
   animation: selection 1.6s forwards;
@@ -134,8 +137,8 @@ main {
 
   input {
     appearance: none;
-    width: 93%;
-    height: 5.1rem;
+    width: 92%; /*pour qu'il ne s'active pas si on clique en dehors de la box*/
+    height: /*5.1rem*/ 3.5rem;
     border-radius: 1rem;
     position: absolute;
     left: 3.5%;
@@ -154,25 +157,25 @@ main {
       overflow: hidden; /*combiné avec le hidden pour ...*/
       margin-bottom: 0;
       font-weight: bold;
-      font-size: 18px;
-      padding-top: 15px;
-      padding-bottom: 10px;
+      font-size: 0.9rem;
+      padding-top: 0.75rem;
+      padding-bottom: 0.5rem;
     }
 
     p {
       margin-left: 5%;
-      font-size: 15px;
-      margin-bottom: 10px;
+      font-size: 0.75rem;
+      margin-bottom: 0.5rem;
     }
   }
 
   .restaurant-minicard-price {
     display: flex;
     align-items: flex-end;
-    margin-bottom: 15px;
-    margin-right: 30px;
-    margin-left: 10px;
-    font-size: 15px;
+    margin-bottom: 0.75rem;
+    margin-right: 1.5rem;
+    margin-left: 0.5rem;
+    font-size: 0.75rem;
   }
 
   .icon {
@@ -194,12 +197,12 @@ main {
 
 button {
   /*penser à le placer dans un nouveau fichier css car quasi identique au button du fichier style.css et faire des imports*/
-  border-radius: 30px;
+  border-radius: 1.5rem;
   background: linear-gradient($secondary, $primary);
   color: $color-box;
   border: none;
   box-shadow: $color-box__shadow;
-  font-size: 16px;
+  font-size: 0.8rem;
   cursor: pointer;
 
   &:hover {
