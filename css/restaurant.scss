@@ -7,7 +7,7 @@
 
 /* I/ HEADER */
 
-.Icon-and-title {
+.icon-and-title {
   .fa-solid {
     color: black;
     position: absolute;
@@ -178,7 +178,7 @@ main {
     font-size: 0.75rem;
   }
 
-  .icon {
+  .icon-check {
     width: 5rem;
     margin-right: -5rem;
     background-color: $tertiary;
@@ -270,7 +270,7 @@ button {
   }
 }
 
-input:checked ~ .icon {
+input:checked ~ .icon-check {
   margin-right: 0;
   transition-duration: 0.5s;
 

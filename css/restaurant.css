@@ -5,7 +5,7 @@
 }
 
 /* I/ HEADER */
-.Icon-and-title .fa-solid {
+.icon-and-title .fa-solid {
   color: black;
   position: absolute;
   top: 3%;
@@ -162,7 +162,7 @@ main section h3::after {
   margin-left: 0.5rem;
   font-size: 0.75rem;
 }
-.restaurant-minicard .icon {
+.restaurant-minicard .icon-check {
   width: 5rem;
   margin-right: -5rem;
   background-color: #99e2d0;
@@ -173,7 +173,7 @@ main section h3::after {
   color: #f6f6f6;
   transition-duration: 0.6s;
 }
-.restaurant-minicard .icon i {
+.restaurant-minicard .icon-check i {
   transition-duration: 0.6s;
 }
 
@@ -266,11 +266,11 @@ button:hover {
     opacity: 1;
   }
 }
-input:checked ~ .icon {
+input:checked ~ .icon-check {
   margin-right: 0;
   transition-duration: 0.5s;
 }
-input:checked ~ .icon i {
+input:checked ~ .icon-check i {
   transform: rotate(360deg);
   transition-duration: 0.5s;
 }/*# sourceMappingURL=restaurant.css.map */

@@ -236,19 +236,21 @@ header {
     color: transparent;
     overflow: hidden;
     position: absolute;
-    opacity: 0;
+    opacity: 0; /* pour rendre visible le coeur rose si et seulement si on click sur l'icon */
     margin-top: 0.035rem;
     margin-left: 0.035rem;
-    transition: 0.1s;
+    transition: 0.01s; /*temps pour le coeur rose d'apparaitre*/
     background: linear-gradient($primary, $secondary);
-    background-clip: text;
+    background-clip: text; /*on met le background pour ne pas faire un carré rose mais un coeur*/
   }
   .restaurant-card-icon {
     padding: 0px 0.25rem 0.5rem 0.25rem;
     font-size: 1.2rem;
     margin-right: 1rem;
     position: relative;
+
     input {
+      /* pour laisser le coeur rose en place avoir clické dessus */
       position: absolute;
       width: 2rem;
       height: 2rem;
