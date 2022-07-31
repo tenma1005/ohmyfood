@@ -42,7 +42,7 @@
   align-items: center;
   position: fixed;
   -webkit-animation: disappear 0ms 2s both;
-  animation: disappear 0ms 2s both;
+          animation: disappear 0ms 2s both;
 }
 
 @-webkit-keyframes chargeur {
