@@ -1,0 +1,36 @@
+@media screen and (min-width: 768px) {
+  button {
+    width: 15rem;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  footer {
+    text-align: center;
+    padding-bottom: 2%;
+  }
+  footer h2 {
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+  main {
+    width: 70%;
+    left: 15%;
+    box-shadow: 0px 0.25rem 1rem #999;
+    margin-bottom: 2%;
+    border-radius: 2.5rem;
+    margin-top: -2.5rem;
+  }
+  main h2 {
+    margin: 0 auto;
+  }
+  main .restaurant-minicard input {
+    width: 93%;
+  }
+  .image-resto {
+    height: 30rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-bottom: -25rem;
+  }
+}/*# sourceMappingURL=breakpoint-resto.css.map */
