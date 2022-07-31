@@ -18,10 +18,12 @@
   <body>
     <!-- I/ HEADER -->
     <header>
+      <!--petite icon fléche et le titre h1-->
       <div class="Icon-and-title">
         <a href="index.html">
           <i class="fas fa-arrow-left"></i>
         </a>
+        <!--Pas besoin du logo car plus facile à gerer en h1-->
         <h1>ohmyfood</h1>
       </div>
       <img
@@ -32,11 +34,14 @@
     </header>
 
     <!-- II/ MAIN -->
+
     <main>
       <!-- 🍴 A/ NOM DU RESTO 🍴 -->
       <div class="restaurant-title">
         <h2>À la française</h2>
-        <div class="card-icon">
+
+        <!--checkbox coeur-->
+        <div class="heart-icon">
           <input type="checkbox" />
           <i class="fas fa-heart" aria-hidden="true"></i>
           <i class="far fa-heart" aria-hidden="true"></i>
@@ -45,45 +50,65 @@
 
       <!-- 🥗 B/ LES ENTRÉES 🥗 -->
       <section>
-        <!--FAIRE CLASSE enter DANS SASS-->
         <h3>ENTRÉES</h3>
 
-        <!-- Mini Card 1 -->
+        <!-- MINI CARD 1 -->
         <div class="restaurant-minicard restaurant-minicard-animation-1">
+          <!--Input pour pouvoir activé l'animation sur TOUTE la mini carte-->
           <input type="checkbox" />
+
+          <!--présentation et nom du plat-->
           <div class="restaurant-minicard-description">
             <h4>Tartare de poulpe acidulé</h4>
             <p class="restaurant-minicard-description">Aux zestes d'orange</p>
           </div>
+
+          <!--Tarif du plat-->
           <div class="restaurant-minicard-price"><strong>25€</strong></div>
+
+          <!--Icon qui s'affiche lorsqu'on clique sur le plat-->
           <div class="icon">
             <i class="fas fa-check-circle"></i>
           </div>
         </div>
 
-        <!-- Mini Card 2 -->
+        <!-- MINI CARD 2 -->
         <div class="restaurant-minicard restaurant-minicard-animation-2">
+          <!--Input pour pouvoir activé l'animation sur TOUTE la mini carte-->
           <input type="checkbox" />
+
+          <!--présentation et nom du plat-->
           <div class="restaurant-minicard-description">
             <h4>Velouté de légumes d'antan</h4>
             <p class="restaurant-minicard-description">
               Carotte, panais, topinambour
             </p>
           </div>
+
+          <!--Tarif du plat-->
           <div class="restaurant-minicard-price"><strong>35€</strong></div>
+
+          <!--Icon qui s'affiche lorsqu'on clique sur le plat-->
           <div class="icon">
             <i class="fas fa-check-circle"></i>
           </div>
         </div>
 
-        <!-- Mini Card 3 -->
+        <!-- MINI CARD 3 -->
         <div class="restaurant-minicard restaurant-minicard-animation-3">
+          <!--Input pour pouvoir activé l'animation sur TOUTE la mini carte-->
           <input type="checkbox" />
+
+          <!--présentation et nom du plat-->
           <div class="restaurant-minicard-description">
             <h4>Soupe à l'oignon</h4>
             <p class="restaurant-minicard-description">Revisitée</p>
           </div>
+
+          <!--Tarif du plat-->
           <div class="restaurant-minicard-price"><strong>20€</strong></div>
+
+          <!--Icon qui s'affiche lorsqu'on clique sur le plat-->
           <div class="icon">
             <i class="fas fa-check-circle"></i>
           </div>
@@ -94,46 +119,67 @@
       <section class="restaurant-dishes">
         <h3>PLATS</h3>
 
-        <!-- Mini Card 4 -->
+        <!-- MINI CARD 4 -->
         <div class="restaurant-minicard restaurant-minicard-animation-4">
+          <!--Input pour pouvoir activé l'animation sur TOUTE la mini carte-->
           <input type="checkbox" />
+
+          <!--présentation et nom du plat-->
           <div class="restaurant-minicard-description">
             <h4>Coquilles Saint-Jacques</h4>
             <p class="restaurant-minicard-description">
               Accompagnées d'une purée de panais
             </p>
           </div>
+
+          <!--Tarif du plat-->
           <div class="restaurant-minicard-price"><strong>40€</strong></div>
+
+          <!--Icon qui s'affiche lorsqu'on clique sur le plat-->
           <div class="icon">
             <i class="fas fa-check-circle"></i>
           </div>
         </div>
 
-        <!-- Mini Card 5 -->
+        <!-- MINI CARD 5 -->
         <div class="restaurant-minicard restaurant-minicard-animation-5">
+          <!--Input pour pouvoir activé l'animation sur TOUTE la mini carte-->
           <input type="checkbox" />
+
+          <!--présentation et nom du plat-->
           <div class="restaurant-minicard-description">
             <h4>Magret de canard</h4>
             <p class="restaurant-minicard-description">
               Et parmentier de pommes de terre
             </p>
           </div>
+
+          <!--Tarif du plat-->
           <div class="restaurant-minicard-price"><strong>35€</strong></div>
+
+          <!--Icon qui s'affiche lorsqu'on clique sur le plat-->
           <div class="icon">
             <i class="fas fa-check-circle"></i>
           </div>
         </div>
 
-        <!-- Mini Card 6 -->
+        <!-- MINI CARD 6 -->
         <div class="restaurant-minicard restaurant-minicard-animation-6">
+          <!--Input pour pouvoir activé l'animation sur TOUTE la mini carte-->
           <input type="checkbox" />
+
+          <!--présentation et nom du plat-->
           <div class="restaurant-minicard-description">
             <h4>Pigeonneau d’Ille-et-Vilaine</h4>
             <p class="restaurant-minicard-description">
               Sur son lit de gnocchis aux légumes
             </p>
           </div>
+
+          <!--Tarif du plat-->
           <div class="restaurant-minicard-price"><strong>44€</strong></div>
+
+          <!--Icon qui s'affiche lorsqu'on clique sur le plat-->
           <div class="icon">
             <i class="fas fa-check-circle"></i>
           </div>
@@ -144,49 +190,70 @@
       <section class="restaurant-desserts">
         <h3>DESSERTS</h3>
 
-        <!-- Mini Card 7 -->
+        <!-- MINI CARD 7 -->
         <div class="restaurant-minicard restaurant-minicard-animation-7">
+          <!--Input pour pouvoir activé l'animation sur TOUTE la mini carte-->
           <input type="checkbox" />
+
+          <!--présentation et nom du plat-->
           <div class="restaurant-minicard-description">
             <h4>Pétales de violettes glacés</h4>
             <p class="restaurant-minicard-description">Et purée de noisettes</p>
           </div>
+
+          <!--Tarif du plat-->
           <div class="restaurant-minicard-price"><strong>18€</strong></div>
+
+          <!--Icon qui s'affiche lorsqu'on clique sur le plat-->
           <div class="icon">
             <i class="fas fa-check-circle"></i>
           </div>
         </div>
 
-        <!-- Mini Card 8 -->
+        <!-- MINI CARD 8 -->
         <div class="restaurant-minicard restaurant-minicard-animation-8">
+          <!--Input pour pouvoir activé l'animation sur TOUTE la mini carte-->
           <input type="checkbox" />
+
+          <!--présentation et nom du plat-->
           <div class="restaurant-minicard-description">
             <h4>Fondant au chocolat</h4>
             <p class="restaurant-minicard-description">Revisité</p>
           </div>
+
+          <!--Tarif du plat-->
           <div class="restaurant-minicard-price"><strong>22€</strong></div>
+
+          <!--Icon qui s'affiche lorsqu'on clique sur le plat-->
           <div class="icon">
             <i class="fas fa-check-circle"></i>
           </div>
         </div>
 
-        <!-- Mini Card 9 -->
+        <!-- MINI CARD 9 -->
         <div class="restaurant-minicard restaurant-minicard-animation-9">
+          <!--Input pour pouvoir activé l'animation sur TOUTE la mini carte-->
           <input type="checkbox" />
+
+          <!--présentation et nom du plat-->
           <div class="restaurant-minicard-description">
             <h4>Millefeuille croustillant</h4>
             <p class="restaurant-minicard-description">
               Myrtilles et pâte d’amande
             </p>
           </div>
+
+          <!--Tarif du plat-->
           <div class="restaurant-minicard-price"><strong>23€</strong></div>
+
+          <!--Icon qui s'affiche lorsqu'on clique sur le plat-->
           <div class="icon">
             <i class="fas fa-check-circle"></i>
           </div>
         </div>
       </section>
 
-      <!-- E/ COMMANDER -->
+      <!-- E/ BOUTON COMMANDER -->
       <button class="commander">Commander</button>
     </main>
 

@@ -67,12 +67,12 @@ main section h3::after {
 .restaurant-title i {
   font-size: 1.5rem;
 }
-.restaurant-title .card-icon {
+.restaurant-title .heart-icon {
   padding: 0.25rem;
   font-size: 1.6rem;
   margin-right: 0.75rem;
 }
-.restaurant-title .card-icon .fas {
+.restaurant-title .heart-icon .fas {
   color: transparent;
   position: absolute;
   opacity: 0; /* pour rendre visible le coeur rose si et seulement si on click sur l'icon */
@@ -83,7 +83,7 @@ main section h3::after {
   -webkit-background-clip: text;
           background-clip: text; /*on met le background pour ne pas faire un carré rose mais un coeur*/
 }
-.restaurant-title .card-icon input {
+.restaurant-title .heart-icon input {
   /* pour laisser le coeur rose en place avoir clické dessus */
   position: absolute;
   z-index: 10;
@@ -92,12 +92,12 @@ main section h3::after {
   opacity: 0;
   cursor: pointer;
 }
-.restaurant-title .card-icon input:checked ~ .far {
+.restaurant-title .heart-icon input:checked ~ .far {
   /*coeur rose*/
   transition-duration: 0.5s;
   opacity: 0;
 }
-.restaurant-title .card-icon input:checked ~ .fas {
+.restaurant-title .heart-icon input:checked ~ .fas {
   /*coeur blanc*/
   transition-duration: 0.5s;
   opacity: 1;
