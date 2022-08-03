@@ -33,4 +33,13 @@
        object-fit: cover;
     margin-bottom: -25rem;
   }
+}
+@media screen and (min-width: 1024px) {
+  .restaurant-minicard:hover .icon-check i {
+    transform: rotate(360deg);
+    transition-duration: 0.6s;
+  }
+  .restaurant-minicard:hover .icon-check {
+    margin-right: 0;
+  }
 }/*# sourceMappingURL=breakpoint-resto.css.map */
