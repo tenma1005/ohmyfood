@@ -41,11 +41,13 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .restaurant-minicard:hover .icon-check i {
-    transform: rotate(360deg);
-    transition-duration: 0.5s;
-  }
-  .restaurant-minicard:hover .icon-check {
+  input:hover ~ .icon-check {
     margin-right: 0;
+    transition-duration: 0.5s;
+
+    i {
+      transform: rotate(360deg);
+      transition-duration: 0.5s;
+    }
   }
 }
