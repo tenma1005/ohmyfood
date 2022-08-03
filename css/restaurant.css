@@ -153,6 +153,8 @@ main section h3::after {
   margin-left: 5%;
   font-size: 0.75rem;
   margin-bottom: 0.5rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .restaurant-minicard .restaurant-minicard-price {
   display: flex;
