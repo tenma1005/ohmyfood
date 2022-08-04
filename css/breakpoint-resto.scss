@@ -50,4 +50,12 @@
       transition-duration: 0.5s;
     }
   }
+
+  .heart-icon ~ .fa-solid {
+    z-index: 50;
+    cursor: pointer;
+  }
+  .heart-icon ~ .fa-solid:hover {
+    opacity: 1;
+  }
 }

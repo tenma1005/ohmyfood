@@ -89,6 +89,14 @@
       margin-left: 1.75rem;
     }
   }
+
+  .restaurant-card-icon .fa-solid {
+    z-index: 50;
+    cursor: pointer;
+  }
+  .restaurant-card-icon .fa-solid:hover {
+    opacity: 1;
+  }
 }
 
 @media screen and (min-width: 1390px) {
