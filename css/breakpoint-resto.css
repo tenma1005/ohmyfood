@@ -35,11 +35,11 @@
   }
 }
 @media screen and (min-width: 1024px) {
-  input:hover ~ .icon-check {
+  input:hover .icon-check {
     margin-right: 0;
     transition-duration: 0.5s;
   }
-  input:hover ~ .icon-check i {
+  input:hover .icon-check i {
     transform: rotate(360deg);
     transition-duration: 0.5s;
   }

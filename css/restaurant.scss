@@ -62,6 +62,8 @@ main {
   }
 }
 
+/* A/ NOM DU RESTO */
+
 .restaurant-title {
   display: flex;
   align-items: center;
@@ -101,13 +103,13 @@ main {
       opacity: 0;
       cursor: pointer;
 
-      &:checked ~ .fa-regular {
+      &:checked .fa-regular {
         /*coeur rose*/
         transition-duration: 0.5s;
         opacity: 0;
       }
 
-      &:checked ~ .fa-solid {
+      &:checked .fa-solid {
         /*coeur blanc*/
         transition-duration: 0.5s;
         opacity: 1;
@@ -197,6 +199,8 @@ main {
   }
 }
 
+/* C/ BOUTON COMMANDER */
+
 button {
   /*penser à le placer dans un nouveau fichier css car quasi identique au button du fichier style.css et faire des imports*/
   border-radius: 1.5rem;
@@ -220,7 +224,7 @@ button {
   padding: 18px 0 18px 0;
 }
 
-/*ANIMATION*/
+/*ANIMATION DES MINICARD*/
 
 .restaurant-minicard-animation-1 {
   animation-delay: 0s; /*définit la durée d'attente avant de démarrer une animation une fois qu'elle a été appliquée à un élément.*/
@@ -272,7 +276,7 @@ button {
   }
 }
 
-input:checked ~ .icon-check {
+input:checked .icon-check {
   margin-right: 0;
   transition-duration: 0.5s;
 

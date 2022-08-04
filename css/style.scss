@@ -110,6 +110,10 @@ header {
   }
 }
 
+/* II/ MAIN */
+
+/* A/ LE FONCTIONNEMENT */
+
 .function {
   display: flex;
   flex-direction: column;
@@ -157,7 +161,7 @@ header {
   }
 }
 
-/* II/ MAIN */
+/* B/ LES CARTES */
 
 .restaurants-list {
   background-color: $color-box;
@@ -257,11 +261,11 @@ header {
       opacity: 0;
       cursor: pointer;
       z-index: 2;
-      &:checked ~ .fa-regular {
+      &:checked .fa-regular {
         transition-duration: 0.5s;
         opacity: 0;
       }
-      &:checked ~ .fa-solid {
+      &:checked .fa-solid {
         transition-duration: 0.5s;
         opacity: 1;
       }
