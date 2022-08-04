@@ -43,11 +43,13 @@
     transform: rotate(360deg);
     transition-duration: 0.5s;
   }
-  .heart-icon ~ .fa-solid {
-    z-index: 50;
+}
+@media screen and (min-width: 1024px) {
+  .heart-icon .fa-solid {
+    z-index: 10;
     cursor: pointer;
   }
-  .heart-icon ~ .fa-solid:hover {
+  .heart-icon .fa-solid:hover {
     opacity: 1;
   }
 }/*# sourceMappingURL=breakpoint-resto.css.map */
