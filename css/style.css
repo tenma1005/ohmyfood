@@ -114,7 +114,6 @@ header .reservation-and-explore button:hover {
 }
 
 /* II/ MAIN */
-/* A/ LE FONCTIONNEMENT */
 .function {
   display: flex;
   flex-direction: column;
@@ -162,7 +161,6 @@ header .reservation-and-explore button:hover {
   font-size: 0.5rem;
 }
 
-/* B/ LES CARTES */
 .restaurants-list {
   background-color: #f6f6f6;
   padding: 5% 5%;
@@ -240,7 +238,7 @@ header .reservation-and-explore button:hover {
   opacity: 0; /* pour rendre visible le coeur rose si et seulement si on click sur l'icon */
   margin-top: 0.035rem;
   margin-left: 0.035rem;
-  transition: 0.01s; /*temps pour le coeur rose d'apparaitre*/
+  transition: 0.3s; /*temps pour le coeur rose d'apparaitre*/
   background: linear-gradient(#9356dc, #ff79da);
   -webkit-background-clip: text;
           background-clip: text; /*on met le background pour ne pas faire un carré rose mais un coeur*/
@@ -260,11 +258,11 @@ header .reservation-and-explore button:hover {
   cursor: pointer;
   z-index: 2;
 }
-.restaurants-list .restaurant-card-icon input:checked .fa-regular {
+.restaurants-list .restaurant-card-icon input:checked ~ .fa-regular {
   transition-duration: 0.5s;
   opacity: 0;
 }
-.restaurants-list .restaurant-card-icon input:checked .fa-solid {
+.restaurants-list .restaurant-card-icon input:checked ~ .fa-solid {
   transition-duration: 0.5s;
   opacity: 1;
 }
