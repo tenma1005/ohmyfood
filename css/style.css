@@ -27,7 +27,7 @@ ul li {
 }
 
 img {
-  max-width: 80%; /*position de l'image par rapport à la maquette*/
+  max-width: 100%; /*position de l'image par rapport à la maquette*/
 }
 
 /* I/ HEADER */
@@ -163,7 +163,6 @@ header .reservation-and-explore button:hover {
 
 .restaurants-list {
   background-color: #f6f6f6;
-  padding: 5% 5%;
   padding-bottom: 10%;
 }
 .restaurants-list h2 {
@@ -208,7 +207,7 @@ header .reservation-and-explore button:hover {
 }
 .restaurants-list .restaurant-card-image {
   height: 8.5rem;
-  width: 22.5rem;
+  width: 100%;
   position: relative;
   overflow: hidden;
 }
@@ -217,8 +216,8 @@ header .reservation-and-explore button:hover {
      object-fit: cover;
   width: 100%;
   position: absolute;
-  top: 35%;
-  left: 35%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 .restaurants-list .restaurant-card-body {

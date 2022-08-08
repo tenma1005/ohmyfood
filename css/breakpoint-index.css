@@ -1,6 +1,6 @@
 @media screen and (max-width: 375px) {
   .restaurant-card {
-    width: 100%;
+    width: 90%;
   }
 }
 @media screen and (min-width: 375px) and (max-width: 768px) {
@@ -9,11 +9,11 @@
     grid-template-columns: repeat(1, 1fr);
   }
   .restaurants-list h2 {
-    width: 16.5rem;
+    width: 90%;
     margin: 1rem auto;
   }
   .restaurants-list .restaurant-card {
-    width: 16.5rem;
+    width: 90%;
   }
   .restaurants-list .restaurant-card img {
     -o-object-fit: cover;
@@ -38,7 +38,7 @@
     margin-right: 0;
   }
   .restaurants-list .restaurant-card {
-    width: 16.5rem;
+    width: 90%;
   }
   .restaurants-list .restaurant-card img {
     -o-object-fit: cover;

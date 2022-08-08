@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @media screen and (min-width: 768px) {
   button {
     width: 15rem;
@@ -34,16 +35,18 @@
     margin-bottom: -25rem;
   }
 }
-@media screen and (min-width: 1024px) {
+/*Déplacer dans le fichier restaurant.scss*/
+/*@media screen and (min-width: 1024px) {
   input:hover ~ .icon-check {
     margin-right: 0;
     transition-duration: 0.5s;
+
+    i {
+      transform: rotate(360deg);
+      transition-duration: 0.5s;
+    }
   }
-  input:hover ~ .icon-check i {
-    transform: rotate(360deg);
-    transition-duration: 0.5s;
-  }
-}
+}*/
 @media screen and (min-width: 1024px) {
   .heart-icon .fa-solid {
     z-index: 10;

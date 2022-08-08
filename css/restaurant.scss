@@ -195,6 +195,16 @@ main {
       transition-duration: 0.6s;
     }
   }
+
+  input:hover ~ .icon-check {
+    margin-right: 0;
+    transition-duration: 0.5s;
+
+    i {
+      transform: rotate(360deg);
+      transition-duration: 0.5s;
+    }
+  }
 }
 
 button {

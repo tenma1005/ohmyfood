@@ -40,7 +40,8 @@
   }
 }
 
-@media screen and (min-width: 1024px) {
+/*Déplacer dans le fichier restaurant.scss*/
+/*@media screen and (min-width: 1024px) {
   input:hover ~ .icon-check {
     margin-right: 0;
     transition-duration: 0.5s;
@@ -50,7 +51,7 @@
       transition-duration: 0.5s;
     }
   }
-}
+}*/
 
 @media screen and (min-width: 1024px) {
   .heart-icon .fa-solid {

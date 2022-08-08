@@ -1,6 +1,6 @@
 @media screen and (max-width: 375px) {
   .restaurant-card {
-    width: 100%;
+    width: 90%;
   }
 }
 
@@ -9,11 +9,11 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     h2 {
-      width: 16.5rem;
+      width: 90%;
       margin: 1rem auto;
     }
     .restaurant-card {
-      width: 16.5rem;
+      width: 90%;
 
       img {
         object-fit: cover;
@@ -40,7 +40,7 @@
     margin-right: 0;
 
     .restaurant-card {
-      width: 16.5rem;
+      width: 90%;
 
       img {
         object-fit: cover;

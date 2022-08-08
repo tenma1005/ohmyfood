@@ -178,6 +178,14 @@ main section h3::after {
 .restaurant-minicard .icon-check i {
   transition-duration: 0.6s;
 }
+.restaurant-minicard input:hover ~ .icon-check {
+  margin-right: 0;
+  transition-duration: 0.5s;
+}
+.restaurant-minicard input:hover ~ .icon-check i {
+  transform: rotate(360deg);
+  transition-duration: 0.5s;
+}
 
 button {
   /*penser à le placer dans un nouveau fichier css car quasi identique au button du fichier style.css et faire des imports*/

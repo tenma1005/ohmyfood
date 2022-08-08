@@ -27,7 +27,7 @@ ul li {
 }
 
 img {
-  max-width: 80%; /*position de l'image par rapport à la maquette*/
+  max-width: 100%; /*position de l'image par rapport à la maquette*/
 }
 
 /* I/ HEADER */
@@ -161,7 +161,6 @@ header {
 
 .restaurants-list {
   background-color: $color-box;
-  padding: 5% 5%;
   padding-bottom: 10%;
 
   h2 {
@@ -208,7 +207,7 @@ header {
   }
   .restaurant-card-image {
     height: 8.5rem;
-    width: 22.5rem;
+    width: 100%;
     position: relative;
     overflow: hidden;
   }
@@ -216,8 +215,8 @@ header {
     object-fit: cover;
     width: 100%;
     position: absolute;
-    top: 35%;
-    left: 35%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
   }
 
