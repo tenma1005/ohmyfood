@@ -81,6 +81,7 @@ main {
     padding: 0.25rem;
     font-size: 1.6rem;
     margin-right: 0.75rem;
+    /* Lorsque la checkbox est coché */
 
     .fa-solid {
       color: transparent;
@@ -88,15 +89,15 @@ main {
       opacity: 0; /* pour rendre visible le coeur rose si et seulement si on click sur l'icon */
       margin-top: 0.035rem;
       margin-left: 0.035rem;
-      transition: 0.01s; /*temps pour le coeur rose d'apparaitre*/
+      transition: 0.3s; /*temps pour le coeur rose d'apparaitre */
       background: linear-gradient($primary, $secondary);
       background-clip: text; /*on met le background pour ne pas faire un carré rose mais un coeur*/
     }
     input {
       /* pour laisser le coeur rose en place avoir clické dessus */
-      position: absolute;
-      z-index: 10;
-      width: 2rem;
+      position: absolute; /* on met l'input en position absolute pour le positionné sur le coeur */
+      z-index: 10; /* on ajoute un z-index de 10 pour que celui-ci soit positionner au dessus du coeur pour ne pas gêner le click */
+      width: 2rem; /* On ajoute une taille pour que l'input prenne tout le coeur */
       height: 2rem;
       opacity: 0;
       cursor: pointer;
@@ -147,14 +148,14 @@ main {
 
   .restaurant-minicard-description {
     width: 100%;
-    white-space: nowrap; /*utiliser pour décrire la façon dont les blancs sont gérés au sein de l'élément.*/
+    white-space: nowrap; /* utiliser pour décrire la façon dont les blancs sont gérés au sein de l'élément.*/
     text-overflow: ellipsis;
     overflow: hidden;
 
     h4 {
       margin-left: 5%;
-      text-overflow: ellipsis; /* pour le ... lorsque le texte ne peux pas tout afficher*/
-      overflow: hidden; /*combiné avec le hidden pour ...*/
+      text-overflow: ellipsis; /* pour le ... lorsque le texte ne peux pas tout afficher */
+      overflow: hidden; /* combiné avec le ellipsis pour faire les ... correctement */
       margin-bottom: 0;
       font-weight: bold;
       font-size: 0.9rem;
@@ -233,7 +234,7 @@ button {
 /*ANIMATION*/
 
 .restaurant-minicard-animation-1 {
-  animation-delay: 0s; /*définit la durée d'attente avant de démarrer une animation une fois qu'elle a été appliquée à un élément.*/
+  animation-delay: 0s; /* définit la durée d'attente avant de démarrer une animation une fois qu'elle a été appliquée à un élément. */
 }
 
 .restaurant-minicard-animation-2 {
